@@ -20,3 +20,5 @@ python -m torch.distributed.launch \
     $CHECKPOINT \
     --launcher pytorch \
     ${@:4}
+
+# ./tools/dist_test.sh occupancy_configs/fb_occ/fbocc-r50-cbgs_depth_16f_16x4_20e.py ckpts/fbocc-r50-cbgs_depth_16f_16x4_20e.pth 1 --eval mIoU
