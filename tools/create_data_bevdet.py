@@ -38,7 +38,7 @@ classes = [
     'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
 ]
 
-VERSION= 'v1.0-trainval'
+VERSION= 'v1.0-mini' #'v1.0-trainval'
 NUSCENES = 'nuscenes'
 def get_gt(info):
     """Generate gt labels from info.
@@ -98,7 +98,6 @@ def nuscenes_data_prep(root_path, info_prefix, version, max_sweeps=10):
     """
     nuscenes_converter.create_nuscenes_infos(
         root_path, info_prefix, version=version, max_sweeps=max_sweeps)
-
 
 
 def add_ann_adj_info(extra_tag, with_lidar_seg=False):
